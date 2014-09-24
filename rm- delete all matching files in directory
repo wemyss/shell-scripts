@@ -1,3 +1,14 @@
 grep -lrIZ <regex> | xargs -0 rm -f --
 
-<regex> : matching the filenames to be deleted
+-l  : prints names of files matching search pattern.
+-r  : recursive search in current directory.
+-I  : skip binary files.
+-Z  : ensures file names are null terminated (stops issues with white space in file name).
+<regex>   : matching the filenames to be deleted.
+xargs -0  : feeds the file names from grep to "rm -f", using NULL bytes as a separator.
+--  : marks the end of options and allows for removal of file names that begin with "-".
+
+
+
+references:
+http://superuser.com/questions/585391/on-linux-how-can-i-find-all-files-that-contain-a-string-and-delete-them
