@@ -1,0 +1,6 @@
+wget -r -np -nH --cut-dirs=4 -R www.url.com/aaa/bbb/ccc/ddd/eee 
+
+-r  : recursive search of files
+-np : ignores parent directories
+--cur-dirs=4
+-R
