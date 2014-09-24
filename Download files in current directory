@@ -1,0 +1,9 @@
+Downloads all files in and below directory "eee"
+
+wget -r -np -nH --cut-dirs=4 -R www.url.com/aaa/bbb/ccc/ddd/eee 
+
+-r  : recursive search of files
+-np : ignores parent directories
+-nH : don't save files to hostname folder
+--cur-dirs=4  : omit parent directories from download
+-R  : excludes index.html files from download
