@@ -1,0 +1,3 @@
+grep -lrIZ <regex> | xargs -0 rm -f --
+
+<regex> : matching the filenames to be deleted
