@@ -1,0 +1,5 @@
+git init
+git add --all       # adds all files in current directory to git repository
+git commit -am "<message>"
+git remote add origin https://github.com/username/repositoryname
+git push -u origin master    # to overwrite files on github use -f, -u is "tracking" so you can use git pull/push with no arguments and it will automatically connect with the remote branch.
