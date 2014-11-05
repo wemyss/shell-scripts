@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+# run using: ./seating.pl <lab name> <am/pm>
+
 $flag = 0;
 $lab = $ARGV[0];
 $time = $ARGV[1];
