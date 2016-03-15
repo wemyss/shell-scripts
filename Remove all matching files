@@ -1,6 +1,6 @@
 Removes all matching files in the current directory and all subdirectories.
 
-grep -lrIZ <regex> | xargs -0 rm -f --
+grep -lrIZ <regex> . | xargs -0 rm -f --
 
 
 -l  : prints names of files matching search pattern.
